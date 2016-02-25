@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "Michael Sverdlikovsky <xedelweiss@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.7.1"
+  }
 }
