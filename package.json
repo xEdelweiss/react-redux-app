@@ -4,12 +4,14 @@
   "description": "React Redux test app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Michael Sverdlikovsky <xedelweiss@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.13.4",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.7.1"
