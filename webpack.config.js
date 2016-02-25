@@ -19,7 +19,15 @@ module.exports = {
         new webpack.NoErrorsPlugin()
     ],
     module: {
+        // from right to left and from bottom to top
         loaders: [
+            {
+                loader: 'react-hot',
+                include: [
+                    path.resolve(__dirname, "src"),
+                ],
+                test: /\.jsx?$/
+            },
             {
                 loader: 'babel-loader',
                 include: [
@@ -28,6 +36,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 plugins: ['transform-runtime'],
                 query: {
+                    cacheDirectory: true,
                     plugins: ['transform-runtime'],
                     presets: ['es2015', 'stage-0', 'react'],
                 }
