@@ -5,8 +5,9 @@
 
 ## Useful links
 
-- [Redux tutorial (ru)](https://www.gitbook.com/book/maxfarseer/redux-course-ru/details)
+- [Redux tutorial](https://www.gitbook.com/book/maxfarseer/redux-course-ru/details) (ru)
 - [Using ES6 and ES7 in the Browser, with Babel 6 and Webpack](http://jamesknelson.com/using-es6-in-the-browser-with-babel-6-and-webpack/)
+- [Redux best practices](https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e) (structure)
 
 ## Read More
 
