@@ -1,0 +1,25 @@
+{
+  "extends": "eslint:recommended",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  // 0 - disabled, 1 - warning, 2 - error
+  "rules": {
+    "comma-dangle": 0,
+    "quotes": [2, "single"],
+    "eol-last": [0],
+    "jsx-quotes": [1, "prefer-single"],
+    "react/jsx-uses-react": 1,
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+}

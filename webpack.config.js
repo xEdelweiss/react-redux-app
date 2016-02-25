@@ -18,28 +18,37 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ],
     module: {
+        preLoaders: [
+            {
+                loaders: ['eslint'],
+                test: /\.jsx?$/,
+                include: [
+                    path.resolve(__dirname, "src"),
+                ],
+            }
+        ],
         // from right to left and from bottom to top
         loaders: [
             {
                 loader: 'react-hot',
+                test: /\.jsx?$/,
                 include: [
                     path.resolve(__dirname, "src"),
                 ],
-                test: /\.jsx?$/
             },
             {
                 loader: 'babel-loader',
+                test: /\.jsx?$/,
                 include: [
                     path.resolve(__dirname, "src"),
                 ],
-                test: /\.jsx?$/,
                 plugins: ['transform-runtime'],
                 query: {
                     cacheDirectory: true,
                     plugins: ['transform-runtime'],
                     presets: ['es2015', 'stage-0', 'react'],
-                }
-            }
+                },
+            },
         ]
     },
     resolve: {

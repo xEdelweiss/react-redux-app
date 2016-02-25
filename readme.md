@@ -1,3 +1,8 @@
+## Rules for ESLint
+
+- [Core](http://eslint.org/docs/rules/)
+- [React Plugin](https://www.npmjs.com/package/eslint-plugin-react)
+
 ## Useful links
 
 - [Redux tutorial (ru)](https://www.gitbook.com/book/maxfarseer/redux-course-ru/details)
