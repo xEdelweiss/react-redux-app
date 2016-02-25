@@ -11,9 +11,19 @@
   "author": "Michael Sverdlikovsky <xedelweiss@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
     "express": "^4.13.4",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.7.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.5.0",
+    "babel-runtime": "^6.5.0"
   }
 }
