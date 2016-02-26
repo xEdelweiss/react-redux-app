@@ -9,12 +9,12 @@ export default function App({ children }) {
                 {' '}
                 <Link activeStyle={{color: 'red'}} onlyActiveOnIndex to='/'>Home</Link>
                 {' '}
-                <Link activeStyle={{color: 'red'}} to='/foo'>Foo</Link>
+                <Link activeStyle={{color: 'red'}} to='/about'>About</Link>
                 {' '}
-                <Link activeStyle={{color: 'red'}} to='/bar'>Bar</Link>
+                <Link activeStyle={{color: 'red'}} to='/blog'>Blog</Link>
             </header>
             <div>
-                <button onClick={() => browserHistory.push('/foo/someone')}>Go to /foo/someone</button>
+                <button onClick={() => browserHistory.push('/blog/someone')}>Go to /blog/someone</button>
             </div>
             <div style={{ marginTop: '1.5em' }}>{children}</div>
         </div>

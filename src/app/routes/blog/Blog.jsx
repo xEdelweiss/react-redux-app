@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default class Foo extends React.Component {
+export default class Blog extends React.Component {
     render() {
         let name = this.props.params.name
 
         return (
             <div>
-                I am Foo!{' '}
+                I am Blog!{' '}
                 {
                     name
                         ? <span>And you're <b>{name}</b></span>
