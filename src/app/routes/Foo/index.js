@@ -1,10 +1,4 @@
+import { makeRoute } from 'utils'
 import Foo from './Foo'
 
-export default {
-    path: 'foo(/:name)',
-    getComponent(location, callback) {
-        require.ensure([], () => {
-            callback(null, Foo)
-        })
-    }
-}
+export default makeRoute('foo(/:name)', Foo)

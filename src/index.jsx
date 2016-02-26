@@ -5,7 +5,7 @@ import {Provider} from 'react-redux'                    // redux
 import configureStore from './configureStore'
 import {Router, browserHistory} from 'react-router'     // router
 import {syncHistoryWithStore} from 'react-router-redux'
-import rootRoute from './App'
+import rootRoute from './app'
 
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)

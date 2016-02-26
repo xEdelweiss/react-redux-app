@@ -1,19 +1,12 @@
+import { makeNestedRoute } from 'utils'
 import App from './App'
 
-import Home from './routes/Home'
-import Bar from './routes/Bar'
-import Foo from './routes/Foo'
+import Home from './routes/home'
+import Bar from './routes/bar'
+import Foo from './routes/foo'
 
-export default {
-    component: 'div',
-    childRoutes: [{
-        path: '/',
-        component: App,
-        indexRoute: Home,
-        childRoutes: [
-            Home,
-            Bar,
-            Foo,
-        ]
-    }]
-}
+export default makeNestedRoute('/', App, Home, [
+    Home,
+    Bar,
+    Foo,
+])

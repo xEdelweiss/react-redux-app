@@ -17,7 +17,7 @@ module.exports = {
     plugins: [
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new npmInstallPlugin(),
+        //new npmInstallPlugin(),
     ],
     module: {
         preLoaders: [
@@ -54,6 +54,9 @@ module.exports = {
         ]
     },
     resolve: {
+        alias: {
+            utils: path.join(__dirname, 'src', 'core', 'utils')
+        },
         extensions: ['', '.js', '.jsx']
     }
 }
