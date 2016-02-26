@@ -1,18 +1,16 @@
-import App from '../app/App'
+import Bar from './Bar'
 
-import Home from './home'
-import Bar from './bar'
-import Foo from './foo'
+import Home from './routes/Home'
+import Foo from './routes/Foo'
 
 export default {
     component: 'div',
     childRoutes: [{
-        path: '/',
-        component: App,
+        path: 'bar',
+        component: Bar,
         indexRoute: Home,
         childRoutes: [
             Home,
-            Bar,
             Foo,
         ]
     }]

@@ -1,12 +1,11 @@
 import 'babel-polyfill'
-import React from 'react'
+import React from 'react'                               // react
 import {render} from 'react-dom'
-import {Provider} from 'react-redux'
-import {Router, browserHistory} from 'react-router'
+import {Provider} from 'react-redux'                    // redux
+import configureStore from './configureStore'
+import {Router, browserHistory} from 'react-router'     // router
 import {syncHistoryWithStore} from 'react-router-redux'
-
-import configureStore from './store/configureStore'
-import rootRoute from './routes'
+import rootRoute from './App'
 
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
