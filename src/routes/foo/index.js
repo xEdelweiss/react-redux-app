@@ -1,8 +1,10 @@
+import Foo from './components/Foo'
+
 export default {
     path: 'foo(/:name)',
     getComponent(location, callback) {
-        require.ensure([], (require) => {
-            callback(null, require('./containers/Foo').default)
+        require.ensure([], () => {
+            callback(null, Foo)
         })
     }
 }
