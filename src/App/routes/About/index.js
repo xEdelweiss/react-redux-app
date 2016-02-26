@@ -1,10 +1,10 @@
-import Foo from './Foo'
+import About from './About'
 
 export default {
-    path: 'foo(/:name)',
+    path: 'about',
     getComponent(location, callback) {
         require.ensure([], () => {
-            callback(null, Foo)
+            callback(null, About)
         })
     }
 }

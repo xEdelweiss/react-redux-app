@@ -1,8 +1,7 @@
 import App from './App'
 
 import Home from './routes/Home'
-import Bar from './routes/Bar'
-import Foo from './routes/Foo'
+import About from './routes/About'
 
 export default {
     component: 'div',
@@ -12,8 +11,7 @@ export default {
         indexRoute: Home,
         childRoutes: [
             Home,
-            Bar,
-            Foo,
+            About,
         ]
     }]
 }
